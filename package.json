@@ -9,7 +9,6 @@
     "preview": "vite preview",
     "lint": "npx eslint src --ext .ts,.tsx --fix",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-
     "preplopbuild": "rimraf plop/",
     "plopbuild": "tsup ./generators/plopfile.ts",
     "postplopbuild": "copyfiles -u 1 ./generators/**/*.hbs plop",

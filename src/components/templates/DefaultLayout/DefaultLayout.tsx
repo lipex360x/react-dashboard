@@ -1,13 +1,23 @@
 import { Outlet } from 'react-router-dom'
 
 import { ToastContainer } from '@/components/bosons/ToastContainer'
-import { Header } from '@/components/molecules/Header'
+import { Sidebar } from '@/components/molecules/Sidebar'
+import { Topbar } from '@/components/molecules/Topbar'
+
+import * as S from './style'
 
 export const DefaultLayout = () => {
   return (
     <>
-      <Header />
-      <Outlet />
+      <S.Container className="app">
+        <Sidebar />
+
+        <S.Main>
+          <Topbar />
+          <Outlet />
+        </S.Main>
+      </S.Container>
+
       <ToastContainer />
     </>
   )

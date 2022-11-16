@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
       line-height: ${theme.lineHeight.base};
       color: ${theme.colors.primary[100]};
 
-      background-color: ${theme.colors.primary[400]};
+      background-color: ${theme.colors.primary[500]};
       transition: background-color ${theme.transition.fast};
     }
   `}
