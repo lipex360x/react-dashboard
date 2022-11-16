@@ -1,5 +1,5 @@
-import { HomePage } from '@/components/organisms/HomePage'
+import { Dashboard } from '@/components/organisms/Dashboard'
 
 export const Home = () => {
-  return <HomePage />
+  return <Dashboard />
 }

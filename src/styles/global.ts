@@ -44,6 +44,42 @@ const GlobalStyles = createGlobalStyle`
       background-color: ${theme.colors.primary[500]};
       transition: background-color ${theme.transition.fast};
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: [ 'Roboto', 'sans-serif' ].join(',');
+    }
+
+    h1 {
+      font-size: ${theme.fontSize['4xl']};
+    }
+
+    h2 {
+      font-size: ${theme.fontSize['3xl']};
+    }
+
+    h3 {
+      font-size: ${theme.fontSize['2xl']};
+    }
+
+    h4 {
+      font-size: ${theme.fontSize.xl};
+      font-weight: ${theme.font.normal};
+    }
+
+    h5 {
+      font-size: ${theme.fontSize.base};
+      font-weight: ${theme.font.normal};
+    }
+
+    h6 {
+      font-size: ${theme.fontSize.sm};
+      font-weight: ${theme.font.normal};
+    }
   `}
 `
 
