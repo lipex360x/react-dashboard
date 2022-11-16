@@ -12,7 +12,9 @@ export const Topbar = () => {
 
   return (
     <S.Container>
-      <div></div>
+      <div>
+        <input type="text" name="" id="" />
+      </div>
 
       {theme.title === 'light' && (
         <a onClick={swithTheme}>

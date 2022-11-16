@@ -4,7 +4,8 @@ export const Container = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
-    gap: ${theme.spacing.xs};
+    gap: 8px;
+    margin-top: ${theme.spacing['3xl']};
 
     h2 {
       text-transform: uppercase;
