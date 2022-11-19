@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Main = styled.main`
   ${({ theme }) => css`
     display: flex;
-    flex: 1;
+    flex: 4;
     flex-direction: column;
     padding: ${theme.spacing.xs} ${theme.spacing.base};
   `}

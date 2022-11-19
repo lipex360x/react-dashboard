@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: ${theme.spacing['3xl']};
+    margin: ${theme.spacing['3xl']} 0;
 
     h2 {
       text-transform: uppercase;

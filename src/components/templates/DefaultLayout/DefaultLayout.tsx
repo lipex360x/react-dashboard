@@ -9,9 +9,8 @@ import * as S from './style'
 export const DefaultLayout = () => {
   return (
     <>
-      <S.Container className="app">
+      <S.Container>
         <Sidebar />
-
         <S.Main>
           <Topbar />
           <Outlet />
