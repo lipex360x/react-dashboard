@@ -10,7 +10,6 @@ export const Input = styled.input`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    transition: background border ${theme.transition.fast};
     position: relative;
     outline: none;
 

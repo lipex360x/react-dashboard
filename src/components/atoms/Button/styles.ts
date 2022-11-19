@@ -38,7 +38,6 @@ const variants = {
     background: none;
     color: ${theme.colors.blueAccent[300]};
     border: 1px solid ${theme.colors.blueAccent[300]};
-    transition: background, color ${theme.transition.fast};
 
     &:not(:disabled):hover {
       color: ${theme.colors.blueAccent[100]};

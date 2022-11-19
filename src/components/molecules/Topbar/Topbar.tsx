@@ -1,8 +1,10 @@
-import { Moon, Sun } from 'phosphor-react'
 import { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 
+import { IconButton } from '@/components/atoms/IconButton'
 import { useTheme } from '@/hooks'
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 
 import * as S from './styles'
 
@@ -17,14 +19,14 @@ export const Topbar = () => {
       </div>
 
       {theme.title === 'light' && (
-        <a onClick={swithTheme}>
-          <Moon size={24} weight="light" color={colors.primary[100]} />
-        </a>
+        <IconButton onClick={swithTheme} style={{ color: colors.primary[100] }}>
+          <DarkModeOutlinedIcon />
+        </IconButton>
       )}
       {theme.title === 'dark' && (
-        <a onClick={swithTheme}>
-          <Sun size={24} weight="light" color={colors.primary[100]} />
-        </a>
+        <IconButton onClick={swithTheme} style={{ color: colors.primary[100] }}>
+          <LightModeOutlinedIcon color="inherit" />
+        </IconButton>
       )}
     </S.Container>
   )

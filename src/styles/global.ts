@@ -9,6 +9,9 @@ const GlobalStyles = createGlobalStyle`
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
 
+      transition: background-color ${theme.transition.default},
+        width ${theme.transition.fast};
+
       &::before,
       &::after {
         box-sizing: inherit;
@@ -42,7 +45,6 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.primary[100]};
 
       background-color: ${theme.colors.primary[500]};
-      transition: background-color ${theme.transition.fast};
     }
 
     h1,
@@ -79,6 +81,14 @@ const GlobalStyles = createGlobalStyle`
     h6 {
       font-size: ${theme.fontSize.sm};
       font-weight: ${theme.font.normal};
+    }
+
+    .MuiIconButton-root:hover {
+      background-color: ${theme.colors.iconRipple.hover};
+    }
+
+    .MuiIconButton-root .MuiTouchRipple-child {
+      background-color: ${theme.colors.iconRipple.click};
     }
   `}
 `

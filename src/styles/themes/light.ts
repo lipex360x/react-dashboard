@@ -7,6 +7,12 @@ export default {
   colors: {
     white: '#fff',
     dark: '#000',
+
+    iconRipple: {
+      hover: '#d0d0d0',
+      click: '#a3a3a3',
+    },
+
     grey: {
       100: '#141414',
       200: '#292929',

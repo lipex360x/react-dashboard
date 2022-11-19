@@ -20,10 +20,8 @@ export const Container = styled.div<SidebarProps>`
     width: 260px;
     flex-direction: column;
     min-height: 100vh;
-    background: ${theme.colors.primary[400]};
+    background-color: ${theme.colors.primary[400]};
     padding: ${theme.spacing.xs} ${theme.spacing.base};
-
-    transition: background-color, width ${theme.transition.fast};
 
     ${isCollapsed && sidebarTransform.collapse}
   `}
