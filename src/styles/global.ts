@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
 
-      transition: background-color ${theme.transition.default},
+      transition: background-color ${theme.transition.fast},
         width ${theme.transition.fast};
 
       &::before,
@@ -22,6 +22,27 @@ const GlobalStyles = createGlobalStyle`
     [disabled] {
       opacity: 0.7;
       cursor: not-allowed;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${theme.colors.grey[600]};
+
+      &:hover {
+        background: ${theme.colors.grey[500]};
+      }
+    }
+
+    ::-webkit-scrollbar-track {
+      background: ${theme.colors.grey[800]};
+    }
+
+    ::-webkit-scrollbar-track:hover {
+      background: ${theme.colors.grey[800]};
     }
 
     body,
