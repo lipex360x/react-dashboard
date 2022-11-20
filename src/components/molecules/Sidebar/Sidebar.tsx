@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
 import { SidebarItem } from '@/components/atoms/SidebarItem'
+import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined'
+import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined'
 
 import * as S from './styles'
 
@@ -16,7 +18,7 @@ export const Sidebar = () => {
       </S.Header>
 
       <SidebarItem
-        title="Home"
+        title="Dashboard"
         to="/"
         icon={<HomeOutlinedIcon />}
         selected={selected}
@@ -25,18 +27,18 @@ export const Sidebar = () => {
       />
 
       <SidebarItem
-        title="Home"
+        title="Manage Team"
         to="/"
-        icon={<HomeOutlinedIcon />}
+        icon={<PeopleOutlinedIcon />}
         selected={selected}
         setSelected={setSelected}
         isCollapesed={isCollapsed}
       />
 
       <SidebarItem
-        title="Home"
+        title="Contacts Information"
         to="/"
-        icon={<HomeOutlinedIcon />}
+        icon={<ContactsOutlinedIcon />}
         selected={selected}
         setSelected={setSelected}
         isCollapesed={isCollapsed}
