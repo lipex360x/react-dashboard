@@ -1,11 +1,13 @@
+import { Container } from '@/components/bosons/Container'
 import { Header } from '@/components/molecules/Header'
-
-import * as S from './styles'
 
 export const DashboardPage = () => {
   return (
-    <S.Container>
+    <Container>
       <Header title="Dashboard" subtitle="This is your dashboard" />
-    </S.Container>
+      <p>lkjd</p>
+      <p>lkjd</p>
+      <p>lkjd</p>
+    </Container>
   )
 }

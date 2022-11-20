@@ -8,16 +8,14 @@ import * as S from './style'
 
 export const DefaultLayout = () => {
   return (
-    <>
-      <S.Container>
-        <Sidebar />
-        <S.Main>
-          <Topbar />
-          <Outlet />
-        </S.Main>
-      </S.Container>
+    <S.Container>
+      <Sidebar />
 
+      <S.Main>
+        <Topbar />
+        <Outlet />
+      </S.Main>
       <ToastContainer />
-    </>
+    </S.Container>
   )
 }

@@ -21,8 +21,6 @@ export const Sidebar = () => {
         </IconButton>
       </S.Header>
 
-      <S.Divisor>Data</S.Divisor>
-
       <SidebarItem
         title="Dashboard"
         to="/"
@@ -31,6 +29,7 @@ export const Sidebar = () => {
         setSelected={setSelected}
         isCollapesed={isCollapsed}
       />
+      <S.Divisor>Data</S.Divisor>
 
       <SidebarItem
         title="Manage Team"

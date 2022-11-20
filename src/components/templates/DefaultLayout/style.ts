@@ -12,6 +12,8 @@ export const Main = styled.main`
     display: flex;
     flex: 4;
     flex-direction: column;
+    gap: ${theme.spacing['3xl']};
     padding: ${theme.spacing.xs} ${theme.spacing.base};
+    margin-bottom: ${theme.spacing.xl};
   `}
 `
