@@ -2,10 +2,10 @@ import { Header } from '@/components/molecules/Header'
 
 import * as S from './styles'
 
-export const {{componentName}}Page = () => {
+export const DashboardPage = () => {
   return (
     <S.Container>
-      <Header title="{{componentName}} page" subtitle="Subtitle {{componentName}} page" />
+      <Header title="Dashboard" subtitle="This is your dashboard" />
     </S.Container>
   )
 }

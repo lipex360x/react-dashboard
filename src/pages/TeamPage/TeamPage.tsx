@@ -2,10 +2,10 @@ import { Header } from '@/components/molecules/Header'
 
 import * as S from './styles'
 
-export const {{componentName}}Page = () => {
+export const TeamPage = () => {
   return (
     <S.Container>
-      <Header title="{{componentName}} page" subtitle="Subtitle {{componentName}} page" />
+      <Header title="MANAGE TEAM" subtitle="Managing the Team Members" />
     </S.Container>
   )
 }

@@ -34,7 +34,7 @@ export const Sidebar = () => {
 
       <SidebarItem
         title="Manage Team"
-        to="/"
+        to="/team"
         icon={<PeopleOutlinedIcon />}
         selected={selected}
         setSelected={setSelected}
@@ -43,7 +43,7 @@ export const Sidebar = () => {
 
       <SidebarItem
         title="Contacts Information"
-        to="/"
+        to="/contacts"
         icon={<ContactsOutlinedIcon />}
         selected={selected}
         setSelected={setSelected}
