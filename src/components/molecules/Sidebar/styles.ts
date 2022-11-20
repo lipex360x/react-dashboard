@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 const sidebarTransform = {
   collapse: () => css`
     width: 70px;
+    text-align: center;
 
     header {
       justify-content: center;
@@ -28,7 +29,18 @@ export const Container = styled.div<SidebarProps>`
 `
 
 export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: end;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: ${theme.colors.grey[300]};
+  `}
+`
+
+export const Divisor = styled.span`
+  ${({ theme }) => css`
+    color: ${theme.colors.greenAccent[500]};
+    font-size: ${theme.fontSize.sm};
+    margin-top: ${theme.spacing['3xl']};
+  `}
 `

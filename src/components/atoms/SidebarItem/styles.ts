@@ -4,6 +4,16 @@ import { SidebarItemProps } from './SidebarItem'
 
 type ItemProps = { isActive: boolean } & Pick<SidebarItemProps, 'isCollapesed'>
 
+const itemTransform = {
+  collapsed: () => css`
+    justify-content: center;
+
+    span {
+      display: none;
+    }
+  `,
+}
+
 export const Item = styled.div<ItemProps>`
   ${({ theme, isCollapesed, isActive }) => css`
     display: flex;
@@ -12,11 +22,13 @@ export const Item = styled.div<ItemProps>`
     width: 100%;
     margin-top: ${theme.spacing.base};
     font-size: ${theme.fontSize.sm};
-    justify-content: ${!isCollapesed ? 'left' : 'center'};
+    justify-content: left;
 
     color: ${!isActive ? theme.colors.grey[500] : theme.colors.grey[100]};
 
-    transition: color ${theme.transition.fast};
+    svg {
+      font-size: ${theme.fontSize.xl};
+    }
 
     &:hover {
       color: ${theme.colors.grey[100]};
@@ -27,8 +39,6 @@ export const Item = styled.div<ItemProps>`
       }
     }
 
-    svg {
-      font-size: ${theme.fontSize.xl};
-    }
+    ${isCollapesed && itemTransform.collapsed}
   `}
 `

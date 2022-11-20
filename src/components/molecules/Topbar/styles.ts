@@ -15,6 +15,7 @@ export const Container = styled.div`
       border-radius: 4px;
       height: 30px;
     }
+
     a {
       width: 24px;
       height: 24px;

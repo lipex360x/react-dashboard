@@ -1,8 +1,10 @@
 import { useState } from 'react'
 
+import { IconButton } from '@/components/atoms/IconButton'
 import { SidebarItem } from '@/components/atoms/SidebarItem'
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined'
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined'
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined'
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined'
 
 import * as S from './styles'
@@ -14,8 +16,12 @@ export const Sidebar = () => {
   return (
     <S.Container isCollapsed={isCollapsed}>
       <S.Header>
-        <button onClick={() => setIsCollapsed(!isCollapsed)}>X</button>
+        <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+          <MenuOutlinedIcon />
+        </IconButton>
       </S.Header>
+
+      <S.Divisor>Data</S.Divisor>
 
       <SidebarItem
         title="Dashboard"

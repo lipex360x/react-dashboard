@@ -23,7 +23,7 @@ export const SidebarItem = ({
     <Link to={to} onClick={() => setSelected(title)}>
       <S.Item isActive={selected === title} isCollapesed={isCollapesed}>
         {icon}
-        {!isCollapesed && <span>{title}</span>}
+        <span>{title}</span>
       </S.Item>
     </Link>
   )
