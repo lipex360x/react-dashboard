@@ -1,11 +1,13 @@
+import { Container } from '@/components/bosons/Container'
 import { Header } from '@/components/molecules/Header'
-
-import * as S from './styles'
+import { TeamTable } from '@/components/organisms/TeamTable'
 
 export const TeamPage = () => {
   return (
-    <S.Container>
+    <Container>
       <Header title="MANAGE TEAM" subtitle="Managing the Team Members" />
-    </S.Container>
+
+      <TeamTable />
+    </Container>
   )
 }
