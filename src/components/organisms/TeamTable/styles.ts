@@ -9,19 +9,35 @@ export const Container = styled.div`
     }
 
     .MuiDataGrid-cell {
-      background-color: green;
+      border-bottom: 'none';
     }
 
     .MuiDataGrid-columnHeaders {
-      background-color: blue;
+      background-color: ${theme.colors.blueAccent[700]};
+    }
+
+    .MuiDataGrid-columnSeparator {
+      color: ${theme.colors.primary[100]} !important;
+    }
+
+    .MuiDataGrid-panel {
+      background-color: ${theme.colors.primary[200]} !important;
+    }
+
+    .MuiDataGrid-cellContent {
+      color: ${theme.colors.primary[100]};
     }
 
     .MuiDataGrid-virtualScroller {
-      background-color: red;
+      background-color: ${theme.colors.primary[400]};
+    }
+
+    .name-column--cell {
+      color: green;
     }
 
     .MuiDataGrid-footerContainer {
-      background-color: orange;
+      background-color: ${theme.colors.blueAccent[700]};
     }
 
     .MuiCheckbox-root {
